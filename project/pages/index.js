@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import style from "@/styles/Home.module.css";
 import "@fontsource/metropolis"; // Defaults to weight 400
 import "@fontsource/metropolis/400.css"; // Specify weight
@@ -13,7 +13,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination,Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay, Scrollbar } from "swiper/modules";
+import Link from "next/link";
 
 //https://www.figma.com/design/dh4zh8M6NPPQtohPO1q8Iy/Untitled?t=n6HVFd8jjuGHEvQ3-0
 
@@ -752,9 +753,9 @@ const Index = () => {
               We ensure your business runs smoothly, while increasing
               productivity and efficiency across the organization.
             </p>
-            <button className={` ${style.ten_page_text_content_btn}`}>
+            <Link href={"/"} className={` ${style.ten_page_text_content_btn}`}>
               REQUEST A DEMO
-            </button>
+            </Link>
           </div>
           <div className={` ${style.ten_page_card_content}`}>
             <div className={` ${style.ten_page_card1}`}>
@@ -909,9 +910,9 @@ const Index = () => {
             <li>Documents in 1 Place</li>
             <li>Visa Processing</li>
           </ul>
-          <button className={style.p12_page_text_content_btn}>
+          <Link href={"/"} className={` ${style.p12_page_text_content_btn} `}>
             REQUEST A DEMO
-          </button>
+          </Link>{" "}
         </div>
         <div className={` ${style.p12_page_image_content} `}>
           <Image
@@ -1076,33 +1077,320 @@ const Index = () => {
           Companies That <b> Trust Us</b>
         </h3>
         <p>Some of the region and the worlds leading brands have chosen us.</p>
-
-        <div className={` ${style.p13_card_container} `}>
-
         <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
+          slidesPerView={5}
+          spaceBetween={20}
+          speed={3000}
+          loop={true}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+            reverseDirection: true,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
+          className={`mySwiper ${style.p13_card_container} `}
+        >
+          {" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo1.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo2.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo3.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo4.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo5.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo3.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+        </Swiper>
+        <Swiper
+          slidesPerView={5}
+          spaceBetween={20}
+          speed={3000}
+          loop={true}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
+          className={`mySwiper ${style.p13_card_container} `}
+        >
+          {" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo1.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo2.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo3.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo4.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo5.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+          <SwiperSlide>
+            <div className={` ${style.p13_card_body} `}>
+              <Image
+                src={"/images/company-logo3.png"}
+                height={200}
+                width={300}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>{" "}
+        </Swiper>
+        <Link href={"/"} className={` ${style.p13_button} `}>
+          REQUEST A DEMO
+        </Link>{" "}
+      </div>
+
+      {/* ////// */}
+      <div
+        className={` ${style.p14_page} `}
+        style={{
+          background: `url(/images/about-us.png) no-repeat center/cover`,
         }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+        <div className={` ${style.p14_page_container} container `}>
+          <div className={` ${style.p14_page_head_sec} `}>
+            <h3>
+              What People Are Saying <br />
+              <b>About Us</b>
+            </h3>
 
+            <div className={` ${style.p14_page_head_btn_sec} `}>
+              <button className={` ${style.p14_page_head_btn} `} id="prev_btn">
+                <Image
+                  src={"/images/button.png"}
+                  height={66}
+                  width={66}
+                  alt=""
+                />
+              </button>
+              <button
+                className={` ${style.p14_page_head_btn} `}
+                style={{ transform: `scaleX(-1)` }}
+                id="next_btn"
+              >
+                <Image
+                  src={"/images/button.png"}
+                  height={66}
+                  width={66}
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
 
-          <div className={` ${style.p13_card_body} `}></div>
+          {/* ////////// */}
+          <div className={` ${style.p14_page_slider_sec}  `}>
+            <Swiper
+              scrollbar={{
+                hide: true,
+              }}
+              slidesPerView={2}
+              loop={true}
+              navigation={{
+                prevEl: "#prev_btn",
+                nextEl: "#next_btn",
+              }}
+              modules={[Scrollbar]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className={` ${style.p14_page_slider_card} `}>
+                  <div className={` ${style.p14_page_slider_card_head} `}>
+                    <div className={` ${style.p14_page_slider_card_profile} `}>
+                      <Image
+                        src={"/images/profile.png"}
+                        width={64}
+                        height={64}
+                        alt=""
+                      />
+                    </div>
+                    <div className={` ${style.p14_page_slider_card_name} `}>
+                      <h4>Emre Bana</h4>
+                      <p>Director of Claims Experience</p>
+                    </div>
+                    <div className={` ${style.p14_page_slider_card_company} `}>
+                      <Image
+                        src={"/images/company-logo3.png"}
+                        height={100}
+                        width={222}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </div>
+                  <div className={` ${style.p14_page_slider_card_data} `}>
+                    <p>
+                      “Compared to our old provider, it's so much easier to
+                      manage our calls, messages, and team with their
+                      user-friendly interface. Our HRMS was incredible and made
+                      onboarding and launching seamless – we're thrilled with
+                      the switch.”
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={` ${style.p14_page_slider_card} `}>
+                  <div className={` ${style.p14_page_slider_card_head} `}>
+                    <div className={` ${style.p14_page_slider_card_profile} `}>
+                      <Image
+                        src={"/images/profile.png"}
+                        width={64}
+                        height={64}
+                        alt=""
+                      />
+                    </div>
+                    <div className={` ${style.p14_page_slider_card_name} `}>
+                      <h4>Emre Bana</h4>
+                      <p>Director of Claims Experience</p>
+                    </div>
+                    <div className={` ${style.p14_page_slider_card_company} `}>
+                      <Image
+                        src={"/images/company-logo3.png"}
+                        height={100}
+                        width={222}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </div>
+                  <div className={` ${style.p14_page_slider_card_data} `}>
+                    <p>
+                      “Compared to our old provider, it's so much easier to
+                      manage our calls, messages, and team with their
+                      user-friendly interface. Our HRMS was incredible and made
+                      onboarding and launching seamless – we're thrilled with
+                      the switch.”
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={` ${style.p14_page_slider_card} `}>
+                  <div className={` ${style.p14_page_slider_card_head} `}>
+                    <div className={` ${style.p14_page_slider_card_profile} `}>
+                      <Image
+                        src={"/images/profile.png"}
+                        width={64}
+                        height={64}
+                        alt=""
+                      />
+                    </div>
+                    <div className={` ${style.p14_page_slider_card_name} `}>
+                      <h4>Emre Bana</h4>
+                      <p>Director of Claims Experience</p>
+                    </div>
+                    <div className={` ${style.p14_page_slider_card_company} `}>
+                      <Image
+                        src={"/images/company-logo3.png"}
+                        height={100}
+                        width={222}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </div>
+                  <div className={` ${style.p14_page_slider_card_data} `}>
+                    <p>
+                      “Compared to our old provider, it's so much easier to
+                      manage our calls, messages, and team with their
+                      user-friendly interface. Our HRMS was incredible and made
+                      onboarding and launching seamless – we're thrilled with
+                      the switch.”
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>
