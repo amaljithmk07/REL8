@@ -777,12 +777,11 @@ const Index = () => {
               />
             </div>
             <div className={` ${style.ten_page_card2}`}>
-              <h3 data-aos="fade-left">Make Better Decisions</h3>
+              <h3 data-aos="fade-left">Improve Employee Experience</h3>
               <p data-aos="fade-left" data-aos-delay="1000">
-                Our people data will help you automatically and accurately
-                report on the data that matters the most to your organization.
-                Enabling managers and stakeholders to make smarter, more timely
-                decisions.
+                User-friendly, well designed HR software helps transform your
+                employees experience. Become a forward-thinking and strategic
+                organization.
               </p>
               <Image
                 src={"/images/improve-employee-experience.png"}
@@ -795,12 +794,11 @@ const Index = () => {
               />
             </div>
             <div className={` ${style.ten_page_card3}`}>
-              <h3 data-aos="fade-left">Make Better Decisions</h3>
+              <h3 data-aos="fade-left">Efficiency and productivity</h3>
               <p data-aos="fade-left" data-aos-delay="1000">
-                Our people data will help you automatically and accurately
-                report on the data that matters the most to your organization.
-                Enabling managers and stakeholders to make smarter, more timely
-                decisions.
+                RPA harnesses advanced cognitive computing and AI to automate
+                high-volume transactional tasks, document handling and
+                validation.
               </p>
               <Image
                 src={"/images/efficiency-and-productivity.png"}
@@ -1575,7 +1573,119 @@ const Index = () => {
       <div className={` ${style.p17_bolg_and_news_page} `}>
         <div
           className={` ${style.p17_bolg_and_news_page_container} container `}
-        ></div>
+        >
+          <div className={` ${style.p17_bolg_and_news_page_text_sec}  `}>
+            <h3>
+              Latest <br />
+              <b>Blogs & News</b>
+            </h3>
+            <Link
+              href={"/"}
+              className={style.p17_bolg_and_news_page_view_all_btn}
+            >
+              VIEW ALL
+            </Link>
+          </div>
+
+          <Swiper
+            modules={[Pagination]}
+            slidesPerView={2}
+            spaceBetween={50}
+            loop={true}
+            className={`mySwiper ${style.p17_bolg_and_news_page_card_container} `}
+          >
+            <SwiperSlide>
+              <div className={` ${style.p17_bolg_and_news_page_card} `}>
+                <div className={` ${style.p17_bolg_and_news_page_card_img} `}>
+                  <Image
+                    src={"/images/news1.png"}
+                    height={340}
+                    width={585}
+                    alt=""
+                  />
+                </div>{" "}
+                <span>Dec 7 ,2023</span>
+                <h3>
+                  Choosing The Best Payroll Software For Your UAE Businesses
+                </h3>
+                <p>
+                  A coaching culture is vital for businesses in the UAE looking
+                  to increase retention.
+                </p>
+                <Link href={"/"}>
+                  READ MORE{" "}
+                  <Image
+                    src={"/images/right-arrow.png"}
+                    height={24}
+                    width={24}
+                    alt="
+            "
+                  />
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={` ${style.p17_bolg_and_news_page_card} `}>
+                <div className={` ${style.p17_bolg_and_news_page_card_img} `}>
+                  <Image
+                    src={"/images/news2.png"}
+                    height={340}
+                    width={585}
+                    alt=""
+                  />
+                </div>{" "}
+                <span>Dec 7 ,2023</span>
+                <h3>
+                  Choosing The Best Payroll Software For Your UAE Businesses
+                </h3>
+                <p>
+                  A coaching culture is vital for businesses in the UAE looking
+                  to increase retention.
+                </p>
+                <Link href={"/"}>
+                  READ MORE{" "}
+                  <Image
+                    src={"/images/right-arrow.png"}
+                    height={24}
+                    width={24}
+                    alt="
+            "
+                  />
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={` ${style.p17_bolg_and_news_page_card} `}>
+                <div className={` ${style.p17_bolg_and_news_page_card_img} `}>
+                  <Image
+                    src={"/images/news3.png"}
+                    height={340}
+                    width={585}
+                    alt=""
+                  />
+                </div>{" "}
+                <span>Dec 7 ,2023</span>
+                <h3>
+                  Choosing The Best Payroll Software For Your UAE Businesses
+                </h3>
+                <p>
+                  A coaching culture is vital for businesses in the UAE looking
+                  to increase retention.
+                </p>
+                <Link href={"/"}>
+                  READ MORE{" "}
+                  <Image
+                    src={"/images/right-arrow.png"}
+                    height={24}
+                    width={24}
+                    alt="
+            "
+                  />
+                </Link>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
   );
