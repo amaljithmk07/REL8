@@ -44,7 +44,7 @@ h5 {
 }
 .swiper-scrollbar,
 .swiper-scrollbar-horizontal {
-  /* width: 200px !important; */
+  width: 350px !important;
   background-color: rgb(255, 255, 255) !important;
   opacity: 1 !important;
   margin: 80px auto 0 auto;

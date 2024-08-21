@@ -1276,7 +1276,6 @@ const Index = () => {
                 hide: true,
               }}
               slidesPerView={2}
-              loop={true}
               navigation={{
                 prevEl: "#prev_btn",
                 nextEl: "#next_btn",
@@ -1310,10 +1309,10 @@ const Index = () => {
                   </div>
                   <div className={` ${style.p14_page_slider_card_data} `}>
                     <p>
-                      “Compared to our old provider, it's so much easier to
+                      “Compared to our old provider, it &apos;s so much easier to
                       manage our calls, messages, and team with their
                       user-friendly interface. Our HRMS was incredible and made
-                      onboarding and launching seamless – we're thrilled with
+                      onboarding and launching seamless – we&apos;re thrilled with
                       the switch.”
                     </p>
                   </div>
@@ -1345,10 +1344,10 @@ const Index = () => {
                   </div>
                   <div className={` ${style.p14_page_slider_card_data} `}>
                     <p>
-                      “Compared to our old provider, it's so much easier to
+                      “Compared to our old provider, it&apos;s so much easier to
                       manage our calls, messages, and team with their
                       user-friendly interface. Our HRMS was incredible and made
-                      onboarding and launching seamless – we're thrilled with
+                      onboarding and launching seamless – we&apos;re thrilled with
                       the switch.”
                     </p>
                   </div>
@@ -1380,10 +1379,45 @@ const Index = () => {
                   </div>
                   <div className={` ${style.p14_page_slider_card_data} `}>
                     <p>
-                      “Compared to our old provider, it's so much easier to
+                      “Compared to our old provider, it&apos;s so much easier to
                       manage our calls, messages, and team with their
                       user-friendly interface. Our HRMS was incredible and made
-                      onboarding and launching seamless – we're thrilled with
+                      onboarding and launching seamless – we&apos;re thrilled with
+                      the switch.”
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={` ${style.p14_page_slider_card} `}>
+                  <div className={` ${style.p14_page_slider_card_head} `}>
+                    <div className={` ${style.p14_page_slider_card_profile} `}>
+                      <Image
+                        src={"/images/profile.png"}
+                        width={64}
+                        height={64}
+                        alt=""
+                      />
+                    </div>
+                    <div className={` ${style.p14_page_slider_card_name} `}>
+                      <h4>Emre Bana</h4>
+                      <p>Director of Claims Experience</p>
+                    </div>
+                    <div className={` ${style.p14_page_slider_card_company} `}>
+                      <Image
+                        src={"/images/company-logo3.png"}
+                        height={100}
+                        width={222}
+                        alt=""
+                      />{" "}
+                    </div>
+                  </div>
+                  <div className={` ${style.p14_page_slider_card_data} `}>
+                    <p>
+                      “Compared to our old provider, it&apos;s so much easier to
+                      manage our calls, messages, and team with their
+                      user-friendly interface. Our HRMS was incredible and made
+                      onboarding and launching seamless – we&apos;re thrilled with
                       the switch.”
                     </p>
                   </div>
