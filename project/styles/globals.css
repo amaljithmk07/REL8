@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
   font-family: "Metropolis";
 }
 .container {
@@ -54,4 +54,9 @@ h5 {
   background: rgb(63, 63, 63);
   padding: 1px;
   border-radius: 50px;
+}
+
+.p_active {
+  opacity: 1;
+  visibility: visible;
 }

@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
       <div>
         <Navbar>
           <Head>
-            <title>Al Gharbia</title>
+            <title>REL8</title>
             <meta name="description" content="" />
             <meta
               name="viewport"

@@ -1309,11 +1309,11 @@ const Index = () => {
                   </div>
                   <div className={` ${style.p14_page_slider_card_data} `}>
                     <p>
-                      “Compared to our old provider, it &apos;s so much easier to
-                      manage our calls, messages, and team with their
+                      “Compared to our old provider, it &apos;s so much easier
+                      to manage our calls, messages, and team with their
                       user-friendly interface. Our HRMS was incredible and made
-                      onboarding and launching seamless – we&apos;re thrilled with
-                      the switch.”
+                      onboarding and launching seamless – we&apos;re thrilled
+                      with the switch.”
                     </p>
                   </div>
                 </div>
@@ -1347,8 +1347,8 @@ const Index = () => {
                       “Compared to our old provider, it&apos;s so much easier to
                       manage our calls, messages, and team with their
                       user-friendly interface. Our HRMS was incredible and made
-                      onboarding and launching seamless – we&apos;re thrilled with
-                      the switch.”
+                      onboarding and launching seamless – we&apos;re thrilled
+                      with the switch.”
                     </p>
                   </div>
                 </div>
@@ -1382,8 +1382,8 @@ const Index = () => {
                       “Compared to our old provider, it&apos;s so much easier to
                       manage our calls, messages, and team with their
                       user-friendly interface. Our HRMS was incredible and made
-                      onboarding and launching seamless – we&apos;re thrilled with
-                      the switch.”
+                      onboarding and launching seamless – we&apos;re thrilled
+                      with the switch.”
                     </p>
                   </div>
                 </div>
@@ -1417,8 +1417,8 @@ const Index = () => {
                       “Compared to our old provider, it&apos;s so much easier to
                       manage our calls, messages, and team with their
                       user-friendly interface. Our HRMS was incredible and made
-                      onboarding and launching seamless – we&apos;re thrilled with
-                      the switch.”
+                      onboarding and launching seamless – we&apos;re thrilled
+                      with the switch.”
                     </p>
                   </div>
                 </div>
@@ -1426,6 +1426,156 @@ const Index = () => {
             </Swiper>
           </div>
         </div>
+      </div>
+
+      {/* ////// */}
+
+      <div className={` ${style.p15_page} `}>
+        <div className={` ${style.p15_page_container} container `}>
+          <h3>
+            What’s Our <b> Customers Experience</b>
+          </h3>
+          <div className={` ${style.p15_page_container_card_sec}  `}>
+            <div className={` ${style.p15_page_container_card}  `}>
+              <h3>65%</h3>
+              Increased Productivity
+            </div>
+            <div className={` ${style.p15_page_container_card}  `}>
+              <h3>80%</h3>
+              Reduction of Labour{" "}
+            </div>
+            <div className={` ${style.p15_page_container_card}  `}>
+              <h3>70%</h3>
+              Efficiency of Team{" "}
+            </div>
+          </div>
+          <div className={` ${style.p15_page_faq_sec} `}>
+            <div className={` ${style.p15_page_faq_sec_title} `}>
+              <h3>
+                Frequently <br />
+                <b>Asked Questions</b>
+              </h3>
+              <p>
+                Quick answers to questions you may have. Can’t find answer to
+                your questions ?
+              </p>
+              <Link
+                href={"/"}
+                className={` ${style.p15_page_faq_sec_title_btn} `}
+              >
+                CONTACT US
+              </Link>
+            </div>
+            <ul className={style.p15_page_faq_sec_list_sec}>
+              <li>
+                <span>
+                  How does the software help increase productivity?{" "}
+                  <button className={style.p15_page_faq_sec_list_btn}>
+                    <Image
+                      src={"/images/plus.png"}
+                      height={24}
+                      width={24}
+                      alt=""
+                    />
+                  </button>
+                </span>
+                <p>
+                  Yes, the software provides reporting and analytics
+                  capabilities to measure the effectiveness of the employees and
+                  identify areas for improvement.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* ///////// */}
+
+      <div className={` ${style.p16_page} `}>
+        <div className={` ${style.p16_page_container} container `}>
+          <div className={` ${style.p16_page_title_sec} `}>
+            <h3>
+              What’s <br />
+              <b>Our Pricing & Plans</b>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Et
+              ultrices neque ornare aenean euismod elementum. Et odio
+              pellentesque
+            </p>
+          </div>
+          <div className={` ${style.p16_page_pricing_card_sec} `}>
+            <div className={` ${style.p16_page_pricing_card} `}>
+              <h3>Starter Plan</h3>
+              <p>
+                Lorem ipsum dolor sit amet, conse sed do eiusmod tempor incidid.
+              </p>
+              <span>
+                $ 1000
+                <h5> / Yearly</h5>
+              </span>
+              <ul className={` ${style.p16_page_pricing_card_list_sec} `}>
+                <li>Fixed fee for upto 5 users</li>
+                <li>Ideal for Small Business </li>
+                <li>IOS & Android App </li>
+                <li>Ai Chat Bot Integration </li>
+              </ul>
+              <button className={` ${style.p16_page_pricing_card_btn} `}>
+                SELECT PLAN
+              </button>
+            </div>
+            <div className={` ${style.p16_page_pricing_card} `}>
+              <div className={style.p16_page_pricing_card_popular_plan}>
+                Popular Plan
+              </div>
+              <h3>Pro Plan</h3>
+              <p>
+                Lorem ipsum dolor sit amet, conse sed do eiusmod tempor incidid.
+              </p>
+              <span>
+                $ 2500
+                <h5> / Yearly</h5>
+              </span>
+              <ul className={` ${style.p16_page_pricing_card_list_sec} `}>
+                <li>Fixed fee for upto 15 users</li>
+                <li>Ideal for Small and medium Business </li>
+                <li>Custom designed mobile apps </li>
+                <li>Custom Branding & URL</li>
+                <li>Additional module development</li>
+              </ul>
+              <button className={` ${style.p16_page_pricing_card_btn} `}>
+                SELECT PLAN
+              </button>
+            </div>
+            <div className={` ${style.p16_page_pricing_card} `}>
+              <h3>Enterprice Plan</h3>
+              <p>
+                Lorem ipsum dolor sit amet, conse sed do eiusmod tempor incidid.
+              </p>
+              <span>Custom</span>
+              <ul className={` ${style.p16_page_pricing_card_list_sec} `}>
+                <li>Fixed fee for Unlimited users</li>
+                <li>Ideal for large Organisation</li>
+                <li>Arabic Language Support</li>
+                <li>Integration with other systems</li>
+                <li>Dedicated Server Hosting</li>
+              </ul>
+              <button className={` ${style.p16_page_pricing_card_btn} `}>
+                INQUIRE NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ///////// */}
+
+      <div className={` ${style.p17_bolg_and_news_page} `}>
+        <div
+          className={` ${style.p17_bolg_and_news_page_container} container `}
+        ></div>
       </div>
     </div>
   );
