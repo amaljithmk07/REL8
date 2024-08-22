@@ -62,91 +62,93 @@ const Index = () => {
                 REQUEST A DEMO
               </button>
             </span>
-            <div className={style.first_page_sick_leave}>
-              <Image
-                src={"/images/sick-leave.png"}
-                height={77}
-                width={311}
-                alt=""
-              />
-            </div>
           </div>
         </div>
       </div>
 
       {/* //////////// */}
       <div className={` ${style.second_page} `}>
-        <div
-          className={` ${style.second_page_image} container`}
-          // style={{
-          //   background: `url(/images/screenshot.png) no-repeat center`,
-          //   backgroundSize: "cover",
-          // }}
-        >
-          <div className={style.second_page_annual_leave}>
+        <div className={` ${style.second_page_image} container`}>
+          <div className={style.second_page_screenshot}>
             <Image
-              src={"/images/annual-leave.png"}
-              height={77}
-              width={311}
+              src={"/images/screenshot.png"}
+              height={690}
+              width={1600}
               alt=""
-              data-aos="fade-left"
             />
-          </div>
-          <Image
-            src={"/images/screenshot.png"}
-            height={690}
-            width={1600}
-            alt=""
-          />
-          <div
-            style={{
-              background: `url(/images/phone.png) no-repeat center `,
-              backgroundSize: "cover",
-            }}
-            className={` ${style.second_page_phone_image}`}
-            data-aos="fade-up"
-          >
-            <Image
-              src={"/images/location.png"}
-              height={104}
-              width={93}
-              alt=""
-              className={style.second_page_image_location}
-              data-aos="fade-left"
-            />
-            <Image
-              src={"/images/img-icon.png"}
-              height={110}
-              width={102}
-              alt=""
-              className={style.second_page_image_img_icon}
-              data-aos="fade-left"
-            />
-            <Image
-              src={"/images/emoji.png"}
-              height={63}
-              width={64}
-              alt=""
-              className={style.second_page_image_emoji}
-              data-aos="fade-left"
-            />
-            <Image
-              src={"/images/emoji1.png"}
-              height={63}
-              width={64}
-              alt=""
-              className={style.second_page_image_emoji1}
-              data-aos="fade-right"
-            />
+            <div className={style.second_page_sick_leave}>
+              <Image
+                src={"/images/sick-leave.png"}
+                height={77}
+                width={311}
+                alt=""
+                data-aos="fade-right"
 
-            <Image
-              src={"/images/emoji2.png"}
-              height={63}
-              width={64}
-              alt=""
-              className={style.second_page_image_emoji2}
-              data-aos="fade-right"
-            />
+              />
+            </div>
+            <div className={style.second_page_annual_leave}>
+              <Image
+                src={"/images/annual-leave.png"}
+                height={77}
+                width={311}
+                alt=""
+                data-aos="fade-left"
+              />
+            </div>
+            <div
+              className={` ${style.second_page_phone_image_sec}`}
+              data-aos="fade-up"
+            >
+              <Image
+                src={"/images/phone.png"}
+                height={660}
+                width={350}
+                alt=""
+                className={style.second_page_phone_image}
+                data-aos="fade-up"
+              />
+              <Image
+                src={"/images/location.png"}
+                height={104}
+                width={93}
+                alt=""
+                className={style.second_page_image_location}
+                data-aos="fade-left"
+              />
+              <Image
+                src={"/images/img-icon.png"}
+                height={110}
+                width={102}
+                alt=""
+                className={style.second_page_image_img_icon}
+                data-aos="fade-left"
+              />
+              <Image
+                src={"/images/emoji.png"}
+                height={63}
+                width={64}
+                alt=""
+                className={style.second_page_image_emoji}
+                data-aos="fade-left"
+              />
+              <Image
+                src={"/images/emoji1.png"}
+                height={63}
+                width={64}
+                alt=""
+                className={style.second_page_image_emoji1}
+                data-aos="fade-right"
+              />
+
+              <Image
+                src={"/images/emoji2.png"}
+                height={63}
+                width={64}
+                alt=""
+                className={style.second_page_image_emoji2}
+                data-aos="fade-right"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -248,13 +250,15 @@ const Index = () => {
         </div>
         <div className={` ${style.fourth_page_box_sec} `}>
           <div className={` ${style.fourth_page_box_body} `}>
-            <Image
-              src={"/images/calendar.png"}
-              height={151}
-              width={143}
-              alt=""
-              data-aos="fade-up"
-            />
+            <div className={` ${style.fourth_page_box_body_img_sec} `}>
+              <Image
+                src={"/images/calendar.png"}
+                height={151}
+                width={143}
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
             <div className={` ${style.fourth_page_box_content} `}>
               <h4>Leave Management</h4>
               <p>
@@ -264,28 +268,32 @@ const Index = () => {
             </div>
           </div>
           <div className={` ${style.fourth_page_box_body} bg_white`}>
-            <Image
-              src={"/images/timer.png"}
-              height={151}
-              width={143}
-              alt=""
-              data-aos="fade-up"
-              data-aos-delay="300"
-            />
+            <div className={` ${style.fourth_page_box_body_img_sec} `}>
+              <Image
+                src={"/images/timer.png"}
+                height={151}
+                width={143}
+                alt=""
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
+            </div>
             <div className={` ${style.fourth_page_box_content} `}>
               <h4>Employee Time Clock</h4>
               <p>Track and manage employee work hours on jobs, projects.</p>
             </div>
           </div>
           <div className={` ${style.fourth_page_box_body} bg_white`}>
-            <Image
-              src={"/images/inbox.png"}
-              height={151}
-              width={143}
-              alt=""
-              data-aos="fade-up"
-              data-aos-delay="300"
-            />
+            <div className={` ${style.fourth_page_box_body_img_sec} `}>
+              <Image
+                src={"/images/inbox.png"}
+                height={151}
+                width={143}
+                alt=""
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
+            </div>
             <div className={` ${style.fourth_page_box_content} `}>
               <h4>Payroll & Salary</h4>
               <p>
@@ -295,13 +303,15 @@ const Index = () => {
             </div>
           </div>
           <div className={` ${style.fourth_page_box_body} `}>
-            <Image
-              src={"/images/rocket.png"}
-              height={151}
-              width={143}
-              alt=""
-              data-aos="fade-up"
-            />
+            <div className={` ${style.fourth_page_box_body_img_sec} `}>
+              <Image
+                src={"/images/rocket.png"}
+                height={151}
+                width={143}
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
             <div className={` ${style.fourth_page_box_content} `}>
               <h4>KPI & Performance</h4>
               <p>
@@ -464,13 +474,15 @@ const Index = () => {
           </div>
           <div className={` ${style.sixth_page_card_sec} `}>
             <div className={` ${style.sixth_page_card} `}>
-              <Image
-                src={"/images/resume-screening.png"}
-                height={201}
-                width={213}
-                alt=""
-                data-aos="fade-left"
-              />
+              <div className={` ${style.sixth_page_card_img_sec} `}>
+                <Image
+                  src={"/images/resume-screening.png"}
+                  height={201}
+                  width={213}
+                  alt=""
+                  data-aos="fade-left"
+                />
+              </div>
               <h3>Resume Screening Made Easy</h3>
               <p>
                 Say goodbye to manual resume reviews. Our AI effortlessly scans
@@ -478,13 +490,15 @@ const Index = () => {
               </p>
             </div>
             <div className={` ${style.sixth_page_card} `}>
-              <Image
-                src={"/images/chatbot.png"}
-                height={201}
-                width={213}
-                alt=""
-                data-aos="fade-left"
-              />
+              <div className={` ${style.sixth_page_card_img_sec} `}>
+                <Image
+                  src={"/images/chatbot.png"}
+                  height={201}
+                  width={213}
+                  alt=""
+                  data-aos="fade-left"
+                />
+              </div>
               <h3>Chatbots for Instant Support</h3>
               <p>
                 Have questions? Our friendly HR chatbots are here 24/7, ready to
@@ -492,13 +506,15 @@ const Index = () => {
               </p>
             </div>
             <div className={` ${style.sixth_page_card} `}>
-              <Image
-                src={"/images/resume-screening.png"}
-                height={201}
-                width={213}
-                alt=""
-                data-aos="fade-left"
-              />
+              <div className={` ${style.sixth_page_card_img_sec} `}>
+                <Image
+                  src={"/images/resume-screening.png"}
+                  height={201}
+                  width={213}
+                  alt=""
+                  data-aos="fade-left"
+                />
+              </div>
               <h3>Resume Screening Made Easy</h3>
               <p>
                 Say goodbye to manual resume reviews. Our AI effortlessly scans
@@ -1835,18 +1851,22 @@ const Index = () => {
               </Link>
             </div>
           </div>
-          <div
-            className={` ${style.p18_hr_portal_page_img_content} `}
-            style={{
-              background: `url(/images/hr-portal-circle.png) no-repeat center/cover`,
-            }}
-          >
+          <div className={` ${style.p18_hr_portal_page_img_content} `}>
             <Image
-              src={"/images/hr-portal-lady.png"}
+              src={"/images/hr-portal-circle.png"}
               height={600}
               width={489}
               alt=""
-            />
+              className={` ${style.p18_hr_portal_page_img_content_circle} `}
+            />{" "}
+            <div className={` ${style.p18_hr_portal_page_img_lady} `}>
+              <Image
+                src={"/images/hr-portal-lady.png"}
+                height={600}
+                width={489}
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>

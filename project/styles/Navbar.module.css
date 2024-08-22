@@ -46,5 +46,10 @@
 .nav_button:hover {
   background-color: transparent;
   border: 1px solid black;
-
+}
+/* ////// */
+@media screen and (max-width: 1440px) {
+  .navbar_sub_body ul {
+    width: 48%;
+  }
 }

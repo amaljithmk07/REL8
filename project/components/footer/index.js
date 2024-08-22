@@ -7,7 +7,7 @@ const Index = () => {
     <div className={footer.footer_main_body}>
       <div className={`${footer.footer_container} container`}>
         <div className={footer.footer_container_img}>
-          <Image src={"/images/rel8-logo.png"} height={85} width={200} alt="" />
+          <Image src={"/images/rel8-logo.png"} height={185} width={300} alt="" />
         </div>
         <ul>
           <li>Terms and Conditions</li>

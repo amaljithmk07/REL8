@@ -21,6 +21,7 @@
   object-fit: cover;
   height: auto;
   width: 100%;
+  display: block;
 }
 .footer_container > ul {
   list-style: none;
@@ -36,6 +37,7 @@
 .footer_container_btn {
   background-color: #ffd801;
   text-decoration: none;
+  
   color: black;
   font-weight: 800;
   width: 105px;
@@ -73,4 +75,12 @@
 .footer__bottom_container > ul > li {
   padding: 0 30px;
   border-left: 1px solid rgb(184, 184, 184);
+}
+/* ///////// */
+
+@media screen and (max-width: 1440px) {
+  .footer_container_img {
+    height: auto;
+    width: 160px;
+  }
 }
