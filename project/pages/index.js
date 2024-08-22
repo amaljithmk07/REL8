@@ -70,15 +70,6 @@ const Index = () => {
                 alt=""
               />
             </div>
-            <div className={style.first_page_annual_leave}>
-              <Image
-                src={"/images/annual-leave.png"}
-                height={77}
-                width={311}
-                alt=""
-                data-aos="fade-left"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -87,11 +78,26 @@ const Index = () => {
       <div className={` ${style.second_page} `}>
         <div
           className={` ${style.second_page_image} container`}
-          style={{
-            background: `url(/images/screenshot.png) no-repeat center`,
-            backgroundSize: "cover",
-          }}
+          // style={{
+          //   background: `url(/images/screenshot.png) no-repeat center`,
+          //   backgroundSize: "cover",
+          // }}
         >
+          <div className={style.second_page_annual_leave}>
+            <Image
+              src={"/images/annual-leave.png"}
+              height={77}
+              width={311}
+              alt=""
+              data-aos="fade-left"
+            />
+          </div>
+          <Image
+            src={"/images/screenshot.png"}
+            height={690}
+            width={1600}
+            alt=""
+          />
           <div
             style={{
               background: `url(/images/phone.png) no-repeat center `,
@@ -1032,68 +1038,75 @@ const Index = () => {
             data-aos="fade-right"
           />
           {/* ///////////////////////// */}
-          <Image
-            src={"/images/person1.png"}
-            height={152}
-            width={152}
-            alt=""
-            className={style.p12_page_image_content_person}
-            data-aos="fade-up"
-          />
-          <Image
-            src={"/images/person2.png"}
-            height={229}
-            width={229}
-            alt=""
-            className={style.p12_page_image_content_person}
-            data-aos="fade-up"
-            data-aos-delay="500"
-          />
-          <Image
-            src={"/images/person3.png"}
-            height={292}
-            width={292}
-            alt=""
-            className={style.p12_page_image_content_person}
-            data-aos="fade-up"
-            data-aos-delay="1000"
-          />
-          <Image
-            src={"/images/person4.png"}
-            height={229}
-            width={229}
-            alt=""
-            className={style.p12_page_image_content_person}
-            data-aos="fade-up"
-            data-aos-delay="1500"
-          />
-          <Image
-            src={"/images/person5.png"}
-            height={175}
-            width={175}
-            alt=""
-            className={style.p12_page_image_content_person}
-            data-aos="fade-up"
-            data-aos-delay="300"
-          />
-          <Image
-            src={"/images/person6.png"}
-            height={229}
-            width={229}
-            alt=""
-            className={style.p12_page_image_content_person}
-            data-aos="fade-up"
-            data-aos-delay="600"
-          />
-          <Image
-            src={"/images/person7.png"}
-            height={292}
-            width={292}
-            alt=""
-            className={style.p12_page_image_content_person}
-            data-aos="fade-up"
-            data-aos-delay="800"
-          />
+          <div className={style.p12_page_image_content_person}>
+            <Image
+              src={"/images/person1.png"}
+              height={152}
+              width={152}
+              alt=""
+              data-aos="fade-up"
+            />
+          </div>
+          <div className={style.p12_page_image_content_person}>
+            <Image
+              src={"/images/person2.png"}
+              height={229}
+              width={229}
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="500"
+            />
+          </div>
+          <div className={style.p12_page_image_content_person}>
+            <Image
+              src={"/images/person3.png"}
+              height={292}
+              width={292}
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            />
+          </div>
+          <div className={style.p12_page_image_content_person}>
+            <Image
+              src={"/images/person4.png"}
+              height={229}
+              width={229}
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="1500"
+            />
+          </div>
+          <div className={style.p12_page_image_content_person}>
+            <Image
+              src={"/images/person5.png"}
+              height={175}
+              width={175}
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="300"
+            />
+          </div>
+          <div className={style.p12_page_image_content_person}>
+            <Image
+              src={"/images/person6.png"}
+              height={229}
+              width={229}
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="600"
+            />
+          </div>
+          <div className={style.p12_page_image_content_person}>
+            <Image
+              src={"/images/person7.png"}
+              height={292}
+              width={292}
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="800"
+            />
+          </div>
         </div>
         {/* /// */}
       </div>
@@ -1468,20 +1481,27 @@ const Index = () => {
             onExit={() => setCountup(false)}
             className={style.p15_page_container_card_sec}
           >
-            {/* <div className={` ${style.p15_page_container_card_sec}  `}> */}
-            <div className={` ${style.p15_page_container_card}  `}>
-              {/* <h3>65%</h3> */}
+            <div
+              className={` ${style.p15_page_container_card}  `}
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <h3>
-                {countUp && (
+                {countUp == true ? (
                   <>
                     <CountUp start={0} end={65} duration={3} />%
                   </>
+                ) : (
+                  "0"
                 )}{" "}
               </h3>
               Increased Productivity
             </div>
-            <div className={` ${style.p15_page_container_card}  `}>
-              {/* <h3>80%</h3> */}
+            <div
+              className={` ${style.p15_page_container_card}  `}
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <h3>
                 {countUp && (
                   <>
@@ -1491,8 +1511,11 @@ const Index = () => {
               </h3>
               Reduction of Labour{" "}
             </div>
-            <div className={` ${style.p15_page_container_card}  `}>
-              {/* <h3>70%</h3> */}
+            <div
+              className={` ${style.p15_page_container_card}  `}
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <h3>
                 {countUp && (
                   <>
@@ -1617,7 +1640,7 @@ const Index = () => {
                 SELECT PLAN
               </button>
             </div>
-            <div className={` ${style.p16_page_pricing_card} `}>
+            <div className={` ${style.p16_page_pricing_card_active} `}>
               <div className={style.p16_page_pricing_card_popular_plan}>
                 Popular Plan
               </div>

@@ -13,7 +13,15 @@
   align-items: flex-start;
   position: relative;
 }
-
+.footer_container_img {
+  height: auto;
+  width: 200px;
+}
+.footer_container_img > img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
 .footer_container > ul {
   list-style: none;
   display: flex;
@@ -29,7 +37,7 @@
   background-color: #ffd801;
   text-decoration: none;
   color: black;
-  font-weight: 700;
+  font-weight: 800;
   width: 105px;
   font-size: 14px;
   border-radius: 50px;
@@ -45,9 +53,9 @@
 }
 .footer__bottom_container {
   width: 100%;
-  padding: 20px 0;
+  padding: 26px 0;
   display: flex;
-  color: rgb(165, 165, 165);
+  color: rgb(83 83 83);
   letter-spacing: 1px;
   justify-content: space-between;
 }
