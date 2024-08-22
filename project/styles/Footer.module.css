@@ -10,7 +10,7 @@
   padding: 120px 0;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   position: relative;
 }
 
@@ -47,6 +47,8 @@
   width: 100%;
   padding: 20px 0;
   display: flex;
+  color: rgb(165, 165, 165);
+  letter-spacing: 1px;
   justify-content: space-between;
 }
 .footer__bottom_container > h4 {

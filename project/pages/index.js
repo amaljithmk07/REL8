@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import style from "@/styles/Home.module.css";
 import "@fontsource/metropolis"; // Defaults to weight 400
 import "@fontsource/metropolis/400.css"; // Specify weight
@@ -6,6 +6,8 @@ import "@fontsource/metropolis/400-italic.css";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -27,14 +29,11 @@ const Index = () => {
     });
   }, []);
 
-  const pagination = {
-    clickable: true,
-    // renderBullet: function (index, className) {
-    //   return (
-    //     '<button class="' + className + '">' + buttons[index] + "</button>"
-    //   );
-    // },
-  };
+  const [countUp, setCountup] = useState(false);
+
+  // const pagination = {
+  //   clickable: true,
+  // };
 
   return (
     <div className={style.main_body}>
@@ -166,14 +165,25 @@ const Index = () => {
           <h4>
             An intuitive & Powerful HR software solution for your business
           </h4>
-          <div className={style.third_page_counting_sec}>
+          <ScrollTrigger
+            onEnter={() => setCountup(true)}
+            onExit={() => setCountup(false)}
+            className={style.third_page_counting_sec}
+          >
+            {/* <div className={style.third_page_counting_sec}> */}
             <div
               className={style.third_page_counting_body}
               data-aos="fade-up"
               data-aos-delay="100"
             >
               <div className={style.third_page_counting_body_gradient}>
-                <span>50+</span>
+                <span>
+                  {countUp && (
+                    <>
+                      <CountUp start={0} end={50} duration={5} />+
+                    </>
+                  )}
+                </span>
               </div>
               Companies Server
             </div>
@@ -183,7 +193,14 @@ const Index = () => {
               data-aos-delay="500"
             >
               <div className={style.third_page_counting_body_gradient}>
-                <span>599+</span>
+                {/* <span>599+</span> */}
+                <span>
+                  {countUp && (
+                    <>
+                      <CountUp start={0} end={599} duration={5} />+
+                    </>
+                  )}{" "}
+                </span>
               </div>
               Daily Active Users
             </div>
@@ -193,11 +210,18 @@ const Index = () => {
               data-aos-delay="900"
             >
               <div className={style.third_page_counting_body_gradient}>
-                <span>20+</span>
+                {/* <span>20+</span> */}
+                <span>
+                  {countUp && (
+                    <>
+                      <CountUp start={0} end={20} duration={5} />+
+                    </>
+                  )}{" "}
+                </span>
               </div>
               Industries Served
             </div>
-          </div>
+          </ScrollTrigger>
           <Link href={"/"} className={style.third_page_request_demo_btn}>
             REQUEST A DEMO
           </Link>
@@ -1439,20 +1463,47 @@ const Index = () => {
           <h3>
             What’s Our <b> Customers Experience</b>
           </h3>
-          <div className={` ${style.p15_page_container_card_sec}  `}>
+          <ScrollTrigger
+            onEnter={() => setCountup(true)}
+            onExit={() => setCountup(false)}
+            className={style.p15_page_container_card_sec}
+          >
+            {/* <div className={` ${style.p15_page_container_card_sec}  `}> */}
             <div className={` ${style.p15_page_container_card}  `}>
-              <h3>65%</h3>
+              {/* <h3>65%</h3> */}
+              <h3>
+                {countUp && (
+                  <>
+                    <CountUp start={0} end={65} duration={3} />%
+                  </>
+                )}{" "}
+              </h3>
               Increased Productivity
             </div>
             <div className={` ${style.p15_page_container_card}  `}>
-              <h3>80%</h3>
+              {/* <h3>80%</h3> */}
+              <h3>
+                {countUp && (
+                  <>
+                    <CountUp start={0} end={80} duration={3} />%
+                  </>
+                )}{" "}
+              </h3>
               Reduction of Labour{" "}
             </div>
             <div className={` ${style.p15_page_container_card}  `}>
-              <h3>70%</h3>
+              {/* <h3>70%</h3> */}
+              <h3>
+                {countUp && (
+                  <>
+                    <CountUp start={0} end={70} duration={3} />%
+                  </>
+                )}{" "}
+              </h3>
               Efficiency of Team{" "}
             </div>
-          </div>
+            {/* </div> */}
+          </ScrollTrigger>
           <div className={` ${style.p15_page_faq_sec} `}>
             <div className={` ${style.p15_page_faq_sec_title} `}>
               <h3>
@@ -1471,6 +1522,42 @@ const Index = () => {
               </Link>
             </div>
             <ul className={style.p15_page_faq_sec_list_sec}>
+              <li>
+                <span>
+                  How does the software help increase productivity?{" "}
+                  <button className={style.p15_page_faq_sec_list_btn}>
+                    <Image
+                      src={"/images/plus.png"}
+                      height={24}
+                      width={24}
+                      alt=""
+                    />
+                  </button>
+                </span>
+                <p>
+                  Yes, the software provides reporting and analytics
+                  capabilities to measure the effectiveness of the employees and
+                  identify areas for improvement.
+                </p>
+              </li>
+              <li>
+                <span>
+                  How does the software help increase productivity?{" "}
+                  <button className={style.p15_page_faq_sec_list_btn}>
+                    <Image
+                      src={"/images/plus.png"}
+                      height={24}
+                      width={24}
+                      alt=""
+                    />
+                  </button>
+                </span>
+                <p>
+                  Yes, the software provides reporting and analytics
+                  capabilities to measure the effectiveness of the employees and
+                  identify areas for improvement.
+                </p>
+              </li>
               <li>
                 <span>
                   How does the software help increase productivity?{" "}

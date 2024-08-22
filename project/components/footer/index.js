@@ -28,9 +28,10 @@ const Index = () => {
       <div className={`${footer.footer__bottom_container} container`}>
         <h4>Copyright 2014. All Rights Reserved.</h4>
         <ul>
-          <li>LinkedIn</li>
-          <li>LinkedIn</li>
-          <li>LinkedIn</li>
+          <li>Linkedin</li>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>X</li>
         </ul>
       </div>
     </div>

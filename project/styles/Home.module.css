@@ -1451,7 +1451,6 @@
   color: #bba8ff;
 }
 .p15_page_faq_sec {
-  height: 300px;
   width: 100%;
   /* background-color: cadetblue; */
   display: flex;
@@ -1473,6 +1472,7 @@
 .p15_page_faq_sec_title > p {
   font-size: 18px;
   line-height: 22px;
+  /* background-color: red; */
 }
 .p15_page_faq_sec_title_btn {
   background-color: #ffd801;
@@ -1488,7 +1488,6 @@
   display: flex;
   /* background-color: red; */
   width: 50%;
-  height: 300px;
   flex-direction: column;
   gap: 20px;
   list-style: none;
@@ -1508,14 +1507,12 @@
   justify-content: space-between;
 }
 .p15_page_faq_sec_list_sec > li > p {
+  display: flex;
   width: 90%;
-  color: #808080;
+  color: #111111;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.5px;
-  opacity: 0;
-  visibility: hidden;
-  display: none;
 }
 .p15_page_faq_sec_list_btn {
   height: 48px;
@@ -1525,6 +1522,7 @@
   background-color: transparent;
   border: 1px solid rgb(214, 214, 214);
 }
+
 /* ///////// */
 .p16_page {
   width: 100%;
@@ -1790,7 +1788,7 @@
 .p18_hr_portal_page_text_content_btn_sec {
   display: flex;
   gap: 20px;
-  padding-top: 50px ;
+  padding-top: 50px;
 }
 .p18_hr_portal_page_text_content_btn1 {
   background-color: #ffd801;
