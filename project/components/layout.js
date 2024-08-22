@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           </Head>
         </Navbar>
         <main> {children}</main>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </div>
     </React.Fragment>
   );

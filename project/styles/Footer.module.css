@@ -7,5 +7,60 @@
   flex-direction: column;
 }
 .footer_container {
-    padding: 100px 0;
+  padding: 120px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}
+
+.footer_container > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer_container > ul > li {
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+.footer_container_btn {
+  background-color: #ffd801;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  width: 105px;
+  font-size: 14px;
+  border-radius: 50px;
+  padding: 20px 40px;
+}
+.footer_container_bottom_border {
+  background-color: rgb(211, 211, 211);
+  height: 2px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 36px;
+  color: rgb(146, 146, 146);
+}
+.footer__bottom_container {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottom_container > h4 {
+  font-weight: 100;
+}
+.footer__bottom_container > ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer__bottom_container > ul > li:nth-child(1) {
+  border: 0;
+}
+.footer__bottom_container > ul > li {
+  padding: 0 30px;
+  border-left: 1px solid rgb(184, 184, 184);
 }

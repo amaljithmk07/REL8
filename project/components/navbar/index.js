@@ -34,7 +34,7 @@ const Index = () => {
             </li>
             <li>
               {" "}
-              <Link href={"/"} className={navbar.nav_button}>
+              <Link href={"https://www.figma.com/design/dh4zh8M6NPPQtohPO1q8Iy/Untitled?t=n6HVFd8jjuGHEvQ3-0"} className={navbar.nav_button}>
                 {" "}
                 REQUEST FOR DEMO{" "}
               </Link>

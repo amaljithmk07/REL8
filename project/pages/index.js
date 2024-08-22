@@ -98,6 +98,7 @@ const Index = () => {
               background: `url(/images/phone.png) no-repeat center `,
               backgroundSize: "cover",
             }}
+            className={` ${style.second_page_phone_image}`}
             data-aos="fade-up"
           >
             <Image
@@ -197,9 +198,9 @@ const Index = () => {
               Industries Served
             </div>
           </div>
-          <button className={style.third_page_request_demo_btn}>
+          <Link href={"/"} className={style.third_page_request_demo_btn}>
             REQUEST A DEMO
-          </button>
+          </Link>
         </div>
       </div>
       {/* ////// */}
@@ -562,7 +563,12 @@ const Index = () => {
           <div className={` ${style.seven_page_card2_sec} `}>
             <Swiper
               pagination={true}
-              modules={[Pagination]}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay, Pagination]}
               // className="mySwiper"
               className={` ${style.seven_page_card2_img_container} mySwiper `}
             >
@@ -1618,8 +1624,7 @@ const Index = () => {
                     src={"/images/right-arrow.png"}
                     height={24}
                     width={24}
-                    alt="
-            "
+                    alt=""
                   />
                 </Link>
               </div>
@@ -1648,8 +1653,7 @@ const Index = () => {
                     src={"/images/right-arrow.png"}
                     height={24}
                     width={24}
-                    alt="
-            "
+                    alt=""
                   />
                 </Link>
               </div>
@@ -1678,13 +1682,62 @@ const Index = () => {
                     src={"/images/right-arrow.png"}
                     height={24}
                     width={24}
-                    alt="
-            "
+                    alt=""
                   />
                 </Link>
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+      </div>
+
+      {/* ///////// */}
+
+      <div className={` ${style.p18_hr_portal_page} `}>
+        <div className={` ${style.p18_hr_portal_page_container} container `}>
+          <div className={` ${style.p18_hr_portal_page_text_content} `}>
+            <h3>
+              Empower Your
+              <br />
+              Organizations Productivity
+              <br />
+              With Our Well Equipped <br />
+              <b>HR Portal Software.</b>
+            </h3>
+            <p>
+              Save time, streamline processes, and sky rocket your organization
+              probability with our complete HR software. Upgrade today!
+            </p>
+            <div
+              className={` ${style.p18_hr_portal_page_text_content_btn_sec} `}
+            >
+              <Link
+                href={"/"}
+                className={` ${style.p18_hr_portal_page_text_content_btn1} `}
+              >
+                REQUEST A DEMO
+              </Link>
+              <Link
+                href={"/"}
+                className={` ${style.p18_hr_portal_page_text_content_btn2} `}
+              >
+                CONTACT US
+              </Link>
+            </div>
+          </div>
+          <div
+            className={` ${style.p18_hr_portal_page_img_content} `}
+            style={{
+              background: `url(/images/hr-portal-circle.png) no-repeat center/cover`,
+            }}
+          >
+            <Image
+              src={"/images/hr-portal-lady.png"}
+              height={600}
+              width={489}
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
