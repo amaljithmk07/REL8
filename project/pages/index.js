@@ -859,15 +859,16 @@ const Index = () => {
                 Enabling managers and stakeholders to make smarter, more timely
                 decisions.
               </p>
-              <Image
-                src={"/images/make-better-decision.png"}
-                height={687}
-                width={851}
-                alt=""
-                className={style.ten_page_card1_img}
-                data-aos="fade-right"
-                data-aos-delay="1000"
-              />
+              <div className={style.ten_page_card1_img}>
+                <Image
+                  src={"/images/make-better-decision.png"}
+                  height={687}
+                  width={851}
+                  alt=""
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
+                />
+              </div>
             </div>
             <div className={` ${style.ten_page_card2}`}>
               <h3 data-aos="fade-left">Improve Employee Experience</h3>
@@ -876,15 +877,16 @@ const Index = () => {
                 employees experience. Become a forward-thinking and strategic
                 organization.
               </p>
-              <Image
-                src={"/images/improve-employee-experience.png"}
-                height={937}
-                width={463}
-                alt=""
-                className={style.ten_page_card2_img}
-                data-aos="fade-up"
-                data-aos-delay="1000"
-              />
+              <div className={style.ten_page_card2_img}>
+                <Image
+                  src={"/images/improve-employee-experience.png"}
+                  height={937}
+                  width={463}
+                  alt=""
+                  data-aos="fade-up"
+                  data-aos-delay="1000"
+                />
+              </div>
             </div>
             <div className={` ${style.ten_page_card3}`}>
               <h3 data-aos="fade-left">Efficiency and productivity</h3>
@@ -893,15 +895,16 @@ const Index = () => {
                 high-volume transactional tasks, document handling and
                 validation.
               </p>
-              <Image
-                src={"/images/efficiency-and-productivity.png"}
-                height={445}
-                width={1150}
-                alt=""
-                className={style.ten_page_card3_img}
-                data-aos="fade-up"
-                data-aos-delay="1000"
-              />
+              <div className={style.ten_page_card3_img}>
+                <Image
+                  src={"/images/efficiency-and-productivity.png"}
+                  height={445}
+                  width={1150}
+                  alt=""
+                  data-aos="fade-up"
+                  data-aos-delay="1000"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -917,60 +920,74 @@ const Index = () => {
 
           <div className={` ${style.p11_page_card_sec} `}>
             <div className={` ${style.p11_page_card} `}>
-              <Image
-                src={"/images/slack-logo.png"}
-                height={47}
-                width={187}
-                alt=""
-              />
+              <div className={` ${style.p11_page_card_img} `}>
+                <Image
+                  src={"/images/slack-logo.png"}
+                  height={47}
+                  width={187}
+                  alt=""
+                />
+              </div>
             </div>
             <div className={` ${style.p11_page_card} `}>
-              <Image
-                src={"/images/google-sheets-logo.png"}
-                height={80}
-                width={216}
-                alt=""
-              />
+              <div className={` ${style.p11_page_card_img} `}>
+                <Image
+                  src={"/images/google-sheets-logo.png"}
+                  height={80}
+                  width={216}
+                  alt=""
+                />
+              </div>
             </div>
             <div className={` ${style.p11_page_card} `}>
-              <Image
-                src={"/images/google-sheets-logo.png"}
-                height={80}
-                width={216}
-                alt=""
-              />
+              <div className={` ${style.p11_page_card_img} `}>
+                <Image
+                  src={"/images/google-sheets-logo.png"}
+                  height={80}
+                  width={216}
+                  alt=""
+                />
+              </div>
             </div>
             <div className={` ${style.p11_page_card} `}>
-              <Image
-                src={"/images/slack-logo.png"}
-                height={47}
-                width={187}
-                alt=""
-              />
+              <div className={` ${style.p11_page_card_img} `}>
+                <Image
+                  src={"/images/slack-logo.png"}
+                  height={47}
+                  width={187}
+                  alt=""
+                />
+              </div>
             </div>
             <div className={` ${style.p11_page_card} `}>
-              <Image
-                src={"/images/google-sheets-logo.png"}
-                height={80}
-                width={216}
-                alt=""
-              />
+              <div className={` ${style.p11_page_card_img} `}>
+                <Image
+                  src={"/images/google-sheets-logo.png"}
+                  height={80}
+                  width={216}
+                  alt=""
+                />
+              </div>
             </div>
             <div className={` ${style.p11_page_card} `}>
-              <Image
-                src={"/images/slack-logo.png"}
-                height={47}
-                width={187}
-                alt=""
-              />
+              <div className={` ${style.p11_page_card_img} `}>
+                <Image
+                  src={"/images/slack-logo.png"}
+                  height={47}
+                  width={187}
+                  alt=""
+                />
+              </div>
             </div>
             <div className={` ${style.p11_page_card} `}>
-              <Image
-                src={"/images/google-sheets-logo.png"}
-                height={80}
-                width={216}
-                alt=""
-              />
+              <div className={` ${style.p11_page_card_img} `}>
+                <Image
+                  src={"/images/google-sheets-logo.png"}
+                  height={80}
+                  width={216}
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1203,62 +1220,74 @@ const Index = () => {
           {" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo1.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo1.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo2.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo2.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo3.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo3.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo4.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo4.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo5.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo5.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo3.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo3.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
         </Swiper>
@@ -1277,62 +1306,74 @@ const Index = () => {
           {" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo1.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo1.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo2.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo2.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo3.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo3.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo4.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo4.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo5.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo5.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <div className={` ${style.p13_card_body} `}>
-              <Image
-                src={"/images/company-logo3.png"}
-                height={200}
-                width={300}
-                alt=""
-              />
+              <div className={` ${style.p13_card_body_img} `}>
+                <Image
+                  src={"/images/company-logo3.png"}
+                  height={200}
+                  width={300}
+                  alt=""
+                />
+              </div>
             </div>
           </SwiperSlide>{" "}
         </Swiper>
