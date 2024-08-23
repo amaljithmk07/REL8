@@ -16,6 +16,16 @@
   align-items: center;
   justify-content: space-between;
 }
+.navbar_logo {
+  height: auto;
+  width: 120px;
+}
+.navbar_logo > img {
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
 .navbar_sub_body ul {
   display: flex;
   align-items: center;
@@ -51,5 +61,10 @@
 @media screen and (max-width: 1440px) {
   .navbar_sub_body ul {
     width: 48%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .navbar_sub_body ul {
+    width: 47%;
   }
 }

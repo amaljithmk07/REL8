@@ -37,7 +37,7 @@
 .footer_container_btn {
   background-color: #ffd801;
   text-decoration: none;
-  
+
   color: black;
   font-weight: 800;
   width: 105px;
@@ -82,5 +82,21 @@
   .footer_container_img {
     height: auto;
     width: 160px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .footer_container_img {
+    height: auto;
+    width: 150px;
+  }
+  .footer_container > ul {
+    gap: 5px;
+  }
+  .footer_container {
+    padding: 100px 0;
+  }
+
+  .footer__bottom_container > ul > li {
+    padding: 0 27px;
   }
 }

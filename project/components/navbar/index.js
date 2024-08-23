@@ -7,8 +7,8 @@ const Index = () => {
     <div>
       <div className={`${navbar.navbar_main_body} `}>
         <div className={`${navbar.navbar_sub_body} container `}>
-          <div>
-            <Image
+        <div className={`${navbar.navbar_logo} `}>
+        <Image
               src={"/images/rel8-logo.png"}
               alt=""
               width={120}

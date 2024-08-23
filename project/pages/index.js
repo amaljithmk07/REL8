@@ -75,6 +75,7 @@ const Index = () => {
               height={690}
               width={1600}
               alt=""
+              data-aos="fade-up"
             />
             <div className={style.second_page_sick_leave}>
               <Image
@@ -83,7 +84,6 @@ const Index = () => {
                 width={311}
                 alt=""
                 data-aos="fade-right"
-
               />
             </div>
             <div className={style.second_page_annual_leave}>
@@ -106,48 +106,53 @@ const Index = () => {
                 alt=""
                 className={style.second_page_phone_image}
                 data-aos="fade-up"
+                data-aos-delay="1000"
               />
-              <Image
-                src={"/images/location.png"}
-                height={104}
-                width={93}
-                alt=""
-                className={style.second_page_image_location}
-                data-aos="fade-left"
-              />
-              <Image
-                src={"/images/img-icon.png"}
-                height={110}
-                width={102}
-                alt=""
-                className={style.second_page_image_img_icon}
-                data-aos="fade-left"
-              />
-              <Image
-                src={"/images/emoji.png"}
-                height={63}
-                width={64}
-                alt=""
-                className={style.second_page_image_emoji}
-                data-aos="fade-left"
-              />
-              <Image
-                src={"/images/emoji1.png"}
-                height={63}
-                width={64}
-                alt=""
-                className={style.second_page_image_emoji1}
-                data-aos="fade-right"
-              />
-
-              <Image
-                src={"/images/emoji2.png"}
-                height={63}
-                width={64}
-                alt=""
-                className={style.second_page_image_emoji2}
-                data-aos="fade-right"
-              />
+              <div className={style.second_page_image_location}>
+                <Image
+                  src={"/images/location.png"}
+                  height={104}
+                  width={93}
+                  alt=""
+                  data-aos="fade-left"
+                />
+              </div>
+              <div className={style.second_page_image_img_icon}>
+                <Image
+                  src={"/images/img-icon.png"}
+                  height={110}
+                  width={102}
+                  alt=""
+                  data-aos="fade-left"
+                />
+              </div>
+              <div className={style.second_page_image_emoji}>
+                <Image
+                  src={"/images/emoji.png"}
+                  height={63}
+                  width={64}
+                  alt=""
+                  data-aos="fade-left"
+                />
+              </div>
+              <div className={style.second_page_image_emoji1}>
+                <Image
+                  src={"/images/emoji1.png"}
+                  height={63}
+                  width={64}
+                  alt=""
+                  data-aos="fade-right"
+                />
+              </div>
+              <div className={style.second_page_image_emoji2}>
+                <Image
+                  src={"/images/emoji2.png"}
+                  height={63}
+                  width={64}
+                  alt=""
+                  data-aos="fade-right"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -162,14 +167,16 @@ const Index = () => {
             // backgroundSize: "cover",
           }}
         >
-          <Image
-            src={"/images/laptop.png"}
-            height={558}
-            width={1052}
-            alt=""
-            data-aos="fade-up"
-            data-aos-delay="400"
-          />
+          <div className={` ${style.third_page_laptop} `}>
+            <Image
+              src={"/images/laptop.png"}
+              height={558}
+              width={1052}
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="400"
+            />
+          </div>
           <h4>
             An intuitive & Powerful HR software solution for your business
           </h4>
@@ -339,38 +346,42 @@ const Index = () => {
           </div>
 
           <div className={` ${style.fifth_page_card_1_image_sec} `}>
-            <Image
-              src={"/images/mobile1.png"}
-              height={1085}
-              width={536}
-              alt=""
-              className={` ${style.fifth_page_card_phone_img} `}
-              data-aos="fade-up"
-            />
-            <Image
-              src={"/images/mobile_background.png"}
-              height={627}
-              width={627}
-              alt=""
-              className={` ${style.fifth_page_card_poppers_img} `}
-              data-aos="fade-right"
-            />
-            <Image
-              src={"/images/punctual.png"}
-              height={76}
-              width={343}
-              alt=""
-              data-aos="fade-left"
-              className={` ${style.fifth_page_card_punctual_img} `}
-            />
-            <Image
-              src={"/images/team-player.png"}
-              height={50}
-              width={228}
-              alt=""
-              data-aos="fade-right"
-              className={` ${style.fifth_page_card_team_player_img} `}
-            />
+            <div className={` ${style.fifth_page_card_phone_img} `}>
+              <div className={` ${style.fifth_page_card_poppers_img} `}>
+                <Image
+                  src={"/images/poppers.png"}
+                  height={627}
+                  width={627}
+                  alt=""
+                  data-aos="fade-right"
+                />
+              </div>
+              <Image
+                src={"/images/mobile1.png"}
+                height={1085}
+                width={536}
+                alt=""
+                data-aos="fade-up"
+              />
+              <div className={` ${style.fifth_page_card_punctual_img} `}>
+                <Image
+                  src={"/images/punctual.png"}
+                  height={76}
+                  width={343}
+                  alt=""
+                  data-aos="fade-left"
+                />
+              </div>
+              <div className={` ${style.fifth_page_card_team_player_img} `}>
+                <Image
+                  src={"/images/team-player.png"}
+                  height={50}
+                  width={228}
+                  alt=""
+                  data-aos="fade-right"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className={` ${style.fifth_page_card_2} `}>
@@ -389,31 +400,34 @@ const Index = () => {
           </div>
 
           <div className={` ${style.fifth_page_card_2_image_sec} `}>
-            <Image
-              src={"/images/mobile2.png"}
-              height={1085}
-              width={536}
-              alt=""
-              className={` ${style.fifth_page_card2_phone_img} `}
-              data-aos="fade-up"
-            />
-            <Image
-              src={"/images/mobile2-watch.png"}
-              height={300}
-              width={200}
-              alt=""
-              className={` ${style.fifth_page_card2_watch} `}
-              data-aos="fade-right"
-              data-aos-delay="300"
-            />
-            <Image
-              src={"/images/mobile2-timer.png"}
-              height={159}
-              width={420}
-              alt=""
-              data-aos="fade-left"
-              className={` ${style.fifth_page_card2_timer} `}
-            />
+            <div className={` ${style.fifth_page_card2_phone_img} `}>
+              <Image
+                src={"/images/mobile2.png"}
+                height={1085}
+                width={536}
+                alt=""
+                data-aos="fade-up"
+              />
+              <div className={` ${style.fifth_page_card2_watch} `}>
+                <Image
+                  src={"/images/mobile2-watch.png"}
+                  height={256}
+                  width={159}
+                  alt=""
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                />
+              </div>
+              <div className={` ${style.fifth_page_card2_timer} `}>
+                <Image
+                  src={"/images/mobile2-timer.png"}
+                  height={159}
+                  width={420}
+                  alt=""
+                  data-aos="fade-left"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className={` ${style.fifth_page_card_3} `}>
@@ -432,22 +446,24 @@ const Index = () => {
           </div>
 
           <div className={` ${style.fifth_page_card_3_image_sec} `}>
-            <Image
-              src={"/images/mobile3.png"}
-              height={847}
-              width={418}
-              alt=""
-              className={` ${style.fifth_page_card3_phone_img} `}
-              data-aos="fade-up"
-            />
-            <Image
-              src={"/images/mobile3_bubble.png"}
-              height={135}
-              width={135}
-              alt=""
-              className={` ${style.fifth_page_card3_bubble} `}
-              data-aos="fade-right"
-            />
+            <div className={` ${style.fifth_page_card3_phone_img} `}>
+              <Image
+                src={"/images/mobile3.png"}
+                height={847}
+                width={418}
+                alt=""
+                data-aos="fade-up"
+              />
+              <div className={` ${style.fifth_page_card3_bubble} `}>
+                <Image
+                  src={"/images/mobile3_bubble.png"}
+                  height={135}
+                  width={135}
+                  alt=""
+                  data-aos="fade-right"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -543,65 +559,74 @@ const Index = () => {
               </p>
             </div>
             <div className={` ${style.seven_page_card1_img_sec} `}>
-              <Image
-                src={"/images/mobile7-1.png"}
-                width={328}
-                height={664}
-                alt=""
-                className={style.seven_page_card1_img_sec_phone}
-                data-aos="fade-up"
-              />
-              <Image
-                src={"/images/team-marketing-room.png"}
-                width={350}
-                height={150}
-                alt=""
-                data-aos="fade-right"
+              <div className={style.seven_page_card1_img_sec_phone}>
+                <Image
+                  src={"/images/mobile7-1.png"}
+                  width={328}
+                  height={664}
+                  alt=""
+                  data-aos="fade-up"
+                />
+              </div>
+              <div
                 className={style.seven_page_card1_img_sec_team_marketing_room}
-              />
-              <Image
-                src={"/images/face-blur.png"}
-                width={164}
-                height={164}
-                alt=""
-                data-aos="fade-left"
-                data-aos-delay="1000"
-                className={style.seven_page_card1_img_sec_face_blur}
-              />
-              <Image
-                src={"/images/meeting-room.png"}
-                width={157}
-                height={157}
-                alt=""
-                data-aos="fade-right"
-                className={style.seven_page_card1_img_sec_meeting_room}
-              />
-              <Image
-                src={"/images/icon7-1.png"}
-                width={48}
-                height={48}
-                alt=""
-                data-aos="fade-right"
-                data-aos-delay="1000"
-                className={style.seven_page_card1_img_sec_icon1}
-              />
-              <Image
-                src={"/images/icon7-2.png"}
-                width={48}
-                height={48}
-                alt=""
-                data-aos="fade-left"
-                data-aos-delay="1000"
-                className={style.seven_page_card1_img_sec_icon2}
-              />
-              <Image
-                src={"/images/icon7-3.png"}
-                width={48}
-                height={48}
-                alt=""
-                data-aos="fade-up"
-                className={style.seven_page_card1_img_sec_icon3}
-              />
+              >
+                <Image
+                  src={"/images/team-marketing-room.png"}
+                  width={350}
+                  height={150}
+                  alt=""
+                  data-aos="fade-right"
+                />
+              </div>
+              <div className={style.seven_page_card1_img_sec_face_blur}>
+                <Image
+                  src={"/images/face-blur.png"}
+                  width={164}
+                  height={164}
+                  alt=""
+                  data-aos="fade-left"
+                  data-aos-delay="1000"
+                />
+              </div>
+              <div className={style.seven_page_card1_img_sec_meeting_room}>
+                <Image
+                  src={"/images/meeting-room.png"}
+                  width={157}
+                  height={157}
+                  alt=""
+                  data-aos="fade-right"
+                />
+              </div>
+              <div className={style.seven_page_card1_img_sec_icon1}>
+                <Image
+                  src={"/images/icon7-1.png"}
+                  width={48}
+                  height={48}
+                  alt=""
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
+                />
+              </div>
+              <div className={style.seven_page_card1_img_sec_icon2}>
+                <Image
+                  src={"/images/icon7-2.png"}
+                  width={48}
+                  height={48}
+                  alt=""
+                  data-aos="fade-left"
+                  data-aos-delay="1000"
+                />
+              </div>
+              <div className={style.seven_page_card1_img_sec_icon3}>
+                <Image
+                  src={"/images/icon7-3.png"}
+                  width={48}
+                  height={48}
+                  alt=""
+                  data-aos="fade-up"
+                />
+              </div>
             </div>
           </div>
           {/* //// */}
@@ -610,90 +635,106 @@ const Index = () => {
             <Swiper
               pagination={true}
               loop={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
+              // autoplay={{
+              //   delay: 2500,
+              //   disableOnInteraction: false,
+              // }}
               modules={[Autoplay, Pagination]}
               // className="mySwiper"
               className={` ${style.seven_page_card2_img_container} mySwiper `}
             >
               <SwiperSlide>
                 <div className={` ${style.seven_page_card2_img_sec} `}>
-                  <Image
-                    src={"/images/leave-and-weakupdate.png"}
-                    width={244}
-                    height={188}
-                    alt=""
-                    data-aos="fade-left"
+                  <div
                     className={
                       style.seven_page_card2_img_sec_leave_and_weakupdate
                     }
-                  />
-                  <Image
-                    src={"/images/attendance-graph.png"}
-                    width={477}
-                    height={236}
-                    alt=""
-                    data-aos="fade-right"
+                  >
+                    <Image
+                      src={"/images/leave-and-weakupdate.png"}
+                      width={244}
+                      height={188}
+                      alt=""
+                      data-aos="fade-left"
+                    />
+                  </div>
+                  <div
                     className={style.seven_page_card2_img_sec_attendance_graph}
-                  />
-                  <Image
-                    src={"/images/video7-1.png"}
-                    width={267}
-                    height={148}
-                    alt=""
-                    data-aos="fade-up"
-                    data-aos-delay="1000"
-                    className={style.seven_page_card2_img_sec_video}
-                  />
-                  <Image
-                    src={"/images/face-blur.png"}
-                    width={164}
-                    height={164}
-                    alt=""
-                    data-aos="fade-left"
-                    className={style.seven_page_card2_img_sec_face_blur}
-                  />
+                  >
+                    <Image
+                      src={"/images/attendance-graph.png"}
+                      width={477}
+                      height={236}
+                      alt=""
+                      data-aos="fade-right"
+                    />
+                  </div>
+                  <div className={style.seven_page_card2_img_sec_video}>
+                    <Image
+                      src={"/images/video7-1.png"}
+                      width={267}
+                      height={148}
+                      alt=""
+                      data-aos="fade-up"
+                      data-aos-delay="1000"
+                    />
+                  </div>
+                  <div className={style.seven_page_card2_img_sec_face_blur}>
+                    <Image
+                      src={"/images/face-blur.png"}
+                      width={164}
+                      height={164}
+                      alt=""
+                      data-aos="fade-left"
+                    />
+                  </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className={` ${style.seven_page_card2_img_sec} `}>
-                  <Image
-                    src={"/images/leave-and-weakupdate.png"}
-                    width={244}
-                    height={188}
-                    alt=""
-                    data-aos="fade-left"
+                  <div
                     className={
                       style.seven_page_card2_img_sec_leave_and_weakupdate
                     }
-                  />
-                  <Image
-                    src={"/images/attendance-graph.png"}
-                    width={477}
-                    height={236}
-                    alt=""
-                    data-aos="fade-right"
+                  >
+                    <Image
+                      src={"/images/leave-and-weakupdate.png"}
+                      width={244}
+                      height={188}
+                      alt=""
+                      data-aos="fade-left"
+                    />
+                  </div>
+                  <div
                     className={style.seven_page_card2_img_sec_attendance_graph}
-                  />
-                  <Image
-                    src={"/images/video7-1.png"}
-                    width={267}
-                    height={148}
-                    alt=""
-                    data-aos="fade-up"
-                    data-aos-delay="1000"
-                    className={style.seven_page_card2_img_sec_video}
-                  />
-                  <Image
-                    src={"/images/face-blur.png"}
-                    width={164}
-                    height={164}
-                    alt=""
-                    data-aos="fade-left"
-                    className={style.seven_page_card2_img_sec_face_blur}
-                  />
+                  >
+                    <Image
+                      src={"/images/attendance-graph.png"}
+                      width={477}
+                      height={236}
+                      alt=""
+                      data-aos="fade-right"
+                    />
+                  </div>
+                  <div className={style.seven_page_card2_img_sec_video}>
+                    <Image
+                      src={"/images/video7-1.png"}
+                      width={267}
+                      height={148}
+                      alt=""
+                      data-aos="fade-up"
+                      data-aos-delay="1000"
+                    />
+                  </div>
+                  <div className={style.seven_page_card2_img_sec_face_blur}>
+                    <Image
+                      src={"/images/face-blur.png"}
+                      width={164}
+                      height={164}
+                      alt=""
+                      data-aos="fade-left"
+                    />
+                  </div>
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -965,94 +1006,106 @@ const Index = () => {
           </Link>{" "}
         </div>
         <div className={` ${style.p12_page_image_content} `}>
-          <Image
-            src={"/images/sqr1.png"}
-            height={16}
-            width={16}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr2.png"}
-            height={30}
-            width={30}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr3.png"}
-            height={44}
-            width={44}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr4.png"}
-            height={78}
-            width={78}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr5.png"}
-            height={32}
-            width={32}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr6.png"}
-            height={22}
-            width={22}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr7.png"}
-            height={78}
-            width={78}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr8.png"}
-            height={50}
-            width={50}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr9.png"}
-            height={30}
-            width={30}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr3.png"}
-            height={44}
-            width={44}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
-          <Image
-            src={"/images/sqr1.png"}
-            height={16}
-            width={16}
-            alt=""
-            className={style.p12_page_image_content_square}
-            data-aos="fade-right"
-          />
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr1.png"}
+              height={16}
+              width={16}
+              alt=""
+              data-aos="fade-right"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr2.png"}
+              height={30}
+              width={30}
+              alt=""
+              data-aos="fade-right"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr3.png"}
+              height={44}
+              width={44}
+              alt=""
+              data-aos="fade-right"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr4.png"}
+              height={78}
+              width={78}
+              alt=""
+              data-aos="fade-right"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr5.png"}
+              height={32}
+              width={32}
+              alt=""
+              data-aos="fade-left"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr6.png"}
+              height={22}
+              width={22}
+              alt=""
+              data-aos="fade-left"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr7.png"}
+              height={78}
+              width={78}
+              alt=""
+              data-aos="fade-left"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr8.png"}
+              height={50}
+              width={50}
+              alt=""
+              data-aos="fade-left"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr9.png"}
+              height={30}
+              width={30}
+              alt=""
+              data-aos="fade-left"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr3.png"}
+              height={44}
+              width={44}
+              alt=""
+              data-aos="fade-left"
+            />
+          </div>
+          <div className={style.p12_page_image_content_square}>
+            <Image
+              src={"/images/sqr1.png"}
+              height={16}
+              width={16}
+              alt=""
+              data-aos="fade-left"
+            />
+          </div>
+
           {/* ///////////////////////// */}
           <div className={style.p12_page_image_content_person}>
             <Image
@@ -1332,6 +1385,7 @@ const Index = () => {
               scrollbar={{
                 hide: true,
               }}
+              spaceBetween={30}
               slidesPerView={2}
               navigation={{
                 prevEl: "#prev_btn",
