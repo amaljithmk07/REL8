@@ -55,7 +55,14 @@ const Index = () => {
             </h4>
             <span className={style.first_page_button_sec}>
               <button className={style.first_page_button}>
-                <Image src={"/images/play.png"} height={15} width={15} alt="" />{" "}
+                <div className={style.first_page_button_img}>
+                  <Image
+                    src={"/images/play.png"}
+                    height={15}
+                    width={15}
+                    alt=""
+                  />{" "}
+                </div>
                 WATCH PROMO
               </button>
               <button className={style.first_page_button}>
@@ -631,7 +638,7 @@ const Index = () => {
           </div>
           {/* //// */}
 
-          <div className={` ${style.seven_page_card2_sec} `}>
+          <div className={` ${style.seven_page_card1_sec} `}>
             <Swiper
               pagination={true}
               loop={true}
@@ -641,7 +648,7 @@ const Index = () => {
               // }}
               modules={[Autoplay, Pagination]}
               // className="mySwiper"
-              className={` ${style.seven_page_card2_img_container} mySwiper `}
+              className={` ${style.seven_page_card2_img_container} mySwiper seven_page_card2_swiper`}
             >
               <SwiperSlide>
                 <div className={` ${style.seven_page_card2_img_sec} `}>
@@ -794,34 +801,39 @@ const Index = () => {
           className={` ${style.nine_page_slider_sec} mySwiper `}
         >
           <SwiperSlide>
-            <Image
-              src={"/images/dashboard.png"}
-              width={1200}
-              height={780}
-              alt=""
-              data-aos="fade-up"
-              className={style.nine_page_slider_sec_img}
-            />
+            <div className={style.nine_page_slider_sec_img}>
+              <Image
+                src={"/images/dashboard.png"}
+                width={1200}
+                height={780}
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
           </SwiperSlide>
+
           <SwiperSlide>
-            <Image
-              src={"/images/dashboard.png"}
-              width={1200}
-              height={780}
-              alt=""
-              data-aos="fade-right"
-              className={style.nine_page_slider_sec_img}
-            />
+            <div className={style.nine_page_slider_sec_img}>
+              <Image
+                src={"/images/dashboard.png"}
+                width={1200}
+                height={780}
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
           </SwiperSlide>
+
           <SwiperSlide>
-            <Image
-              src={"/images/dashboard.png"}
-              width={1200}
-              height={780}
-              alt=""
-              data-aos="fade-right"
-              className={style.nine_page_slider_sec_img}
-            />
+            <div className={style.nine_page_slider_sec_img}>
+              <Image
+                src={"/images/dashboard.png"}
+                width={1200}
+                height={780}
+                alt=""
+                data-aos="fade-up"
+              />
+            </div>
           </SwiperSlide>
         </Swiper>
 
@@ -1382,8 +1394,6 @@ const Index = () => {
         </Link>{" "}
       </div>
 
-
-
       {/* ////// */}
       <div
         className={` ${style.p14_page} `}
@@ -1428,14 +1438,15 @@ const Index = () => {
               scrollbar={{
                 hide: true,
               }}
+              loop={true}
               spaceBetween={30}
               slidesPerView={2}
               navigation={{
                 prevEl: "#prev_btn",
                 nextEl: "#next_btn",
               }}
-              modules={[Scrollbar]}
-              className="mySwiper"
+              modules={[Scrollbar, Navigation]}
+              className="mySwiper "
             >
               <SwiperSlide>
                 <div className={` ${style.p14_page_slider_card} `}>

@@ -24,6 +24,9 @@ h5 {
   margin-left: 0;
   margin-right: 0;
 }
+.seven_page_card2_swiper {
+  margin: 0 !important;
+}
 
 .swiper-pagination {
   padding-bottom: 6px !important;
@@ -59,8 +62,8 @@ h5 {
 
 @media screen and (max-width: 1366px) {
   .container {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
     box-sizing: border-box;
   }
 }
@@ -85,5 +88,14 @@ h5 {
     background-color: rgb(255, 255, 255) !important;
     opacity: 1 !important;
     margin: 50px auto 0 auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper-scrollbar,
+  .swiper-scrollbar-horizontal {
+    width: 350px !important;
+    background-color: rgb(255, 255, 255) !important;
+    opacity: 1 !important;
+    margin: 35px auto 0 auto;
   }
 }
