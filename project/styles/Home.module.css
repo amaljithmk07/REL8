@@ -4333,7 +4333,7 @@
   }
   .p14_page_container {
     gap: 30px;
-}
+  }
   .p14_page_slider_card_profile {
     width: 45px;
   }
@@ -4341,5 +4341,26 @@
     font-size: 16px;
     letter-spacing: 0.5px;
     line-height: 23px;
+  }
+  .p15_page {
+    padding: 50px 0;
+  }
+  .p15_page_container > h3 {
+    font-size: 30px;
+  }
+  .p15_page_container {
+    gap: 20px;
+  }
+  .p15_page_container_card_sec {
+    width: 80%;
+    border: 1px solid #e1e1e1;
+  }
+  .p15_page_container_card > h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .p15_page_container_card {
+    padding: 0;
+    font-size: 16px;
   }
 }
