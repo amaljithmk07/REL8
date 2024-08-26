@@ -3863,3 +3863,13 @@
     width: 80%;
   }
 }
+@media screen and (max-width: 950px) {
+  .first_page_container {
+    padding-top: 160px;
+    padding-bottom: 350px;
+  }
+  .first_page_text_wrap > h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
