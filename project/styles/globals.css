@@ -99,3 +99,12 @@ h5 {
     margin: 35px auto 0 auto;
   }
 }
+@media screen and (max-width: 950px) {
+  .swiper-scrollbar,
+  .swiper-scrollbar-horizontal {
+    width: 300px !important;
+    background-color: rgb(255, 255, 255) !important;
+    opacity: 1 !important;
+    margin: 30px auto 0 auto;
+  }
+}

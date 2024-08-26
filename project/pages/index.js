@@ -167,23 +167,26 @@ const Index = () => {
 
       {/* ////////// */}
       <div className={` ${style.third_page} `}>
-        <div
-          className={` ${style.third_page_container} container`}
-          style={{
-            background: `url(/images/gradient_back.png) no-repeat top`,
-            // backgroundSize: "cover",
-          }}
-        >
-          <div className={` ${style.third_page_laptop} `}>
-            <Image
-              src={"/images/laptop.png"}
-              height={558}
-              width={1052}
-              alt=""
-              data-aos="fade-up"
-              data-aos-delay="400"
-            />
+        <div className={` ${style.third_page_container} container`}>
+          <div
+            className={` ${style.third_page_background}`}
+            style={{
+              background: `url(/images/gradient_back.png) no-repeat top`,
+              // backgroundSize: "cover",
+            }}
+          >
+            <div className={` ${style.third_page_laptop} `}>
+              <Image
+                src={"/images/laptop.png"}
+                height={558}
+                width={1052}
+                alt=""
+                data-aos="fade-up"
+                data-aos-delay="400"
+              />
+            </div>
           </div>
+
           <h4>
             An intuitive & Powerful HR software solution for your business
           </h4>
