@@ -13,14 +13,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
 // import required modules
+
 import {
   Pagination,
   Navigation,
   Autoplay,
   Scrollbar,
   EffectCreative,
+  FreeMode,
+  Thumbs,
 } from "swiper/modules";
 import Link from "next/link";
 
@@ -37,9 +43,7 @@ const Index = () => {
 
   const [countUp, setCountup] = useState(false);
 
-  // const pagination = {
-  //   clickable: true,
-  // };
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
     <div className={style.main_body}>
@@ -804,8 +808,6 @@ const Index = () => {
           <button className={` ${style.nine_page_menu_btn}  `}>Training</button>
         </div>
         <Swiper
-          // pagination={pagination}
-
           modules={[Pagination]}
           className={` ${style.nine_page_slider_sec} mySwiper `}
         >
@@ -845,7 +847,88 @@ const Index = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-
+        {/* <Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+        }}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2"
+      >
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+        </SwiperSlide>
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+        </SwiperSlide>
+      </Swiper> */}
         <h4>
           Our Dashboard includes many widgets containing information &apos;s
           about the whole organization of yours. it includes quick view of leave
@@ -1229,6 +1312,7 @@ const Index = () => {
           slidesPerView={3}
           spaceBetween={10}
           speed={3000}
+          allowTouchMove={false}
           breakpoints={{
             550: {
               slidesPerView: 5,
@@ -1322,6 +1406,7 @@ const Index = () => {
           slidesPerView={3}
           spaceBetween={10}
           speed={3000}
+          allowTouchMove={false}
           loop={true}
           breakpoints={{
             550: {

@@ -276,7 +276,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
 }
 .third_page_laptop {
   height: auto;
