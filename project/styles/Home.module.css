@@ -5948,4 +5948,9 @@
     letter-spacing: 0;
     text-align: center;
   }
+  .fourth_page_text > p {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0;
+}
 }
