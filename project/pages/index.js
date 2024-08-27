@@ -1676,12 +1676,14 @@ const Index = () => {
                 <span>
                   How does the software help increase productivity?{" "}
                   <button className={style.p15_page_faq_sec_list_btn}>
-                    <Image
-                      src={"/images/plus.png"}
-                      height={24}
-                      width={24}
-                      alt=""
-                    />
+                    <div className={style.p15_page_faq_sec_list_btn_img}>
+                      <Image
+                        src={"/images/plus.png"}
+                        height={24}
+                        width={24}
+                        alt=""
+                      />
+                    </div>
                   </button>
                 </span>
                 <p>
@@ -1694,12 +1696,14 @@ const Index = () => {
                 <span>
                   How does the software help increase productivity?{" "}
                   <button className={style.p15_page_faq_sec_list_btn}>
-                    <Image
-                      src={"/images/plus.png"}
-                      height={24}
-                      width={24}
-                      alt=""
-                    />
+                    <div className={style.p15_page_faq_sec_list_btn_img}>
+                      <Image
+                        src={"/images/plus.png"}
+                        height={24}
+                        width={24}
+                        alt=""
+                      />
+                    </div>
                   </button>
                 </span>
                 <p>
@@ -1712,12 +1716,14 @@ const Index = () => {
                 <span>
                   How does the software help increase productivity?{" "}
                   <button className={style.p15_page_faq_sec_list_btn}>
-                    <Image
-                      src={"/images/plus.png"}
-                      height={24}
-                      width={24}
-                      alt=""
-                    />
+                    <div className={style.p15_page_faq_sec_list_btn_img}>
+                      <Image
+                        src={"/images/plus.png"}
+                        height={24}
+                        width={24}
+                        alt=""
+                      />
+                    </div>
                   </button>
                 </span>
                 <p>
