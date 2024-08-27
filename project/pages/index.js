@@ -15,7 +15,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination, Navigation, Autoplay, Scrollbar } from "swiper/modules";
+import {
+  Pagination,
+  Navigation,
+  Autoplay,
+  Scrollbar,
+  EffectCreative,
+} from "swiper/modules";
 import Link from "next/link";
 
 //https://www.figma.com/design/dh4zh8M6NPPQtohPO1q8Iy/Untitled?t=n6HVFd8jjuGHEvQ3-0
@@ -1220,9 +1226,14 @@ const Index = () => {
         </h3>
         <p>Some of the region and the worlds leading brands have chosen us.</p>
         <Swiper
-          slidesPerView={5}
+          slidesPerView={3}
           spaceBetween={20}
           speed={3000}
+          breakpoints={{
+            550: {
+              slidesPerView: 5,
+            },
+          }}
           loop={true}
           autoplay={{
             delay: 0,
@@ -1307,10 +1318,15 @@ const Index = () => {
           </SwiperSlide>{" "}
         </Swiper>
         <Swiper
-          slidesPerView={5}
+          slidesPerView={3}
           spaceBetween={20}
           speed={3000}
           loop={true}
+          breakpoints={{
+            550: {
+              slidesPerView: 5,
+            },
+          }}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
@@ -1443,7 +1459,12 @@ const Index = () => {
               }}
               loop={true}
               spaceBetween={30}
-              slidesPerView={2}
+              slidesPerView={1}
+              breakpoints={{
+                550: {
+                  slidesPerView: 2,
+                },
+              }}
               navigation={{
                 prevEl: "#prev_btn",
                 nextEl: "#next_btn",
@@ -1814,6 +1835,91 @@ const Index = () => {
               </button>
             </div>
           </div>
+          <Swiper
+            grabCursor={true}
+            effect={"creative"}
+            creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+              },
+              next: {
+                translate: ["100%", 0, 0],
+              },
+            }}
+            modules={[EffectCreative]}
+            className={`${style.p16_page_pricing_card_sec_swiper} mySwiper`}
+          >
+            <SwiperSlide>
+              {" "}
+              <div className={` ${style.p16_page_pricing_card_swiper} `}>
+                <h3>Starter Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, conse sed do eiusmod tempor
+                  incidid.
+                </p>
+                <span>
+                  $ 1000
+                  <h5> / Yearly</h5>
+                </span>
+                <ul className={` ${style.p16_page_pricing_card_list_sec} `}>
+                  <li>Fixed fee for upto 5 users</li>
+                  <li>Ideal for Small Business </li>
+                  <li>IOS & Android App </li>
+                  <li>Ai Chat Bot Integration </li>
+                </ul>
+                <button className={` ${style.p16_page_pricing_card_btn} `}>
+                  SELECT PLAN
+                </button>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={` ${style.p16_page_pricing_card_swiper_active} `}>
+                <div className={style.p16_page_pricing_card_popular_plan}>
+                  Popular Plan
+                </div>
+                <h3>Pro Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, conse sed do eiusmod tempor
+                  incidid.
+                </p>
+                <span>
+                  $ 2500
+                  <h5> / Yearly</h5>
+                </span>
+                <ul className={` ${style.p16_page_pricing_card_list_sec} `}>
+                  <li>Fixed fee for upto 15 users</li>
+                  <li>Ideal for Small and medium Business </li>
+                  <li>Custom designed mobile apps </li>
+                  <li>Custom Branding & URL</li>
+                  <li>Additional module development</li>
+                </ul>
+                <button className={` ${style.p16_page_pricing_card_btn} `}>
+                  SELECT PLAN
+                </button>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={` ${style.p16_page_pricing_card_swiper} `}>
+                <h3>Enterprice Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, conse sed do eiusmod tempor
+                  incidid.
+                </p>
+                <span>Custom</span>
+                <ul className={` ${style.p16_page_pricing_card_list_sec} `}>
+                  <li>Fixed fee for Unlimited users</li>
+                  <li>Ideal for large Organisation</li>
+                  <li>Arabic Language Support</li>
+                  <li>Integration with other systems</li>
+                  <li>Dedicated Server Hosting</li>
+                </ul>
+                <button className={` ${style.p16_page_pricing_card_btn} `}>
+                  INQUIRE NOW
+                </button>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
 
@@ -1838,7 +1944,12 @@ const Index = () => {
 
           <Swiper
             modules={[Pagination]}
-            slidesPerView={2}
+            slidesPerView={1}
+            breakpoints={{
+              530: {
+                slidesPerView: 2,
+              },
+            }}
             spaceBetween={50}
             loop={true}
             className={`mySwiper ${style.p17_bolg_and_news_page_card_container} `}

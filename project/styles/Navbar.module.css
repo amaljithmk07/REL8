@@ -113,6 +113,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .navbar_main_body {
+    padding-top: 20px;
+  }
   .navbar_sub_body ul {
     display: none;
   }

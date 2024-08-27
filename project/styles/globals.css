@@ -59,7 +59,9 @@ h5 {
   padding: 1px;
   border-radius: 50px;
 }
-
+.swiper-3d .swiper-slide-shadow {
+  background: rgba(0, 0, 0, 0);
+}
 @media screen and (max-width: 1366px) {
   .container {
     padding-left: 5% !important;
