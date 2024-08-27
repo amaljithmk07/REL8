@@ -4899,6 +4899,8 @@
   .p13_page > p {
     font-size: 16px;
     padding-bottom: 15px;
+    width: 80%;
+    text-align: center;
   }
   .p13_card_body {
     height: 85px;
@@ -5629,6 +5631,7 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 40px 5% 0 5%;
+    gap: 10px;
   }
   .fifth_page_card_1 {
     width: 90%;
@@ -5669,6 +5672,8 @@
   .fifth_page_card_3_content > p {
     font-size: 14px;
     line-height: 18px;
+    padding-top: 5px;
+
     letter-spacing: 0.5px;
   }
   .fifth_page_card3_phone_img {
@@ -5761,14 +5766,19 @@
     letter-spacing: 0.5px;
     line-height: 19px;
   }
+  .p15_page_container {
+    gap: 10px;
+}
   .p15_page_container_card_sec {
-    width: 95%;
+    width: 100%;
     padding: 10px;
     letter-spacing: 0.5px;
     font-size: 14px;
     gap: 0px;
+    justify-content: space-between;
     text-align: center;
     line-height: 10px;
+    border-radius: 25px;
   }
   .p15_page_container_card {
     box-sizing: border-box;
@@ -5791,6 +5801,11 @@
     gap: 8px;
     width: 100%;
     align-items: center;
+    text-align: center;
+  }
+  .p15_page_container > h3 {
+    font-size: 25px;
+    line-height: 30px;
     text-align: center;
   }
   .p15_page_faq_sec_title > h3 > br {
@@ -5952,5 +5967,25 @@
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 0;
-}
+  }
+  .fourth_page_box_content > p {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+
+  .p13_page > p {
+    font-size: 15px;
+    padding-bottom: 15px;
+    width: 80%;
+    text-align: center;
+  }
+  .p15_page_container_card {
+    box-sizing: border-box;
+    justify-content: flex-start;
+    padding: 0 3%;
+    gap: 0px;
+    font-size: 13px;
+    line-height: 15px;
+  }
 }

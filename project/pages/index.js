@@ -279,7 +279,7 @@ const Index = () => {
                 height={151}
                 width={143}
                 alt=""
-                data-aos="fade-up"
+                data-aos="fade-left"
               />
             </div>
             <div className={` ${style.fourth_page_box_content} `}>
@@ -297,7 +297,7 @@ const Index = () => {
                 height={151}
                 width={143}
                 alt=""
-                data-aos="fade-up"
+                data-aos="fade-left"
                 data-aos-delay="300"
               />
             </div>
@@ -313,7 +313,7 @@ const Index = () => {
                 height={151}
                 width={143}
                 alt=""
-                data-aos="fade-up"
+                data-aos="fade-left"
                 data-aos-delay="300"
               />
             </div>
@@ -332,7 +332,7 @@ const Index = () => {
                 height={151}
                 width={143}
                 alt=""
-                data-aos="fade-up"
+                data-aos="fade-left"
               />
             </div>
             <div className={` ${style.fourth_page_box_content} `}>
@@ -1227,11 +1227,12 @@ const Index = () => {
         <p>Some of the region and the worlds leading brands have chosen us.</p>
         <Swiper
           slidesPerView={3}
-          spaceBetween={20}
+          spaceBetween={10}
           speed={3000}
           breakpoints={{
             550: {
               slidesPerView: 5,
+              spaceBetween: 20,
             },
           }}
           loop={true}
@@ -1319,12 +1320,13 @@ const Index = () => {
         </Swiper>
         <Swiper
           slidesPerView={3}
-          spaceBetween={20}
+          spaceBetween={10}
           speed={3000}
           loop={true}
           breakpoints={{
             550: {
               slidesPerView: 5,
+              spaceBetween: 20,
             },
           }}
           autoplay={{
