@@ -14,21 +14,24 @@ const Index = () => {
             alt=""
           />
         </div>
-        <ul>
-          <li>Terms and Conditions</li>
-          <li>Privacy Policy</li>
-          <li>FAQS</li>
-        </ul>
-        <ul>
-          <li>Blogs</li>
-          <li>Contact Us</li>
-        </ul>
-        <ul>
-          <li>Upgrade to Rel8 today and improve your organization</li>
-          <Link href={"/"} className={footer.footer_container_btn}>
-            BOOK A DEMO
-          </Link>
-        </ul>
+
+        <div className={footer.footer_container_uls}>
+          <ul>
+            <li>Terms and Conditions</li>
+            <li>Privacy Policy</li>
+            <li>FAQS</li>
+          </ul>
+          <ul>
+            <li>Blogs</li>
+            <li>Contact Us</li>
+          </ul>
+          <ul>
+            <li>Upgrade to Rel8 today and improve your organization</li>
+            <Link href={"/"} className={footer.footer_container_btn}>
+              BOOK A DEMO
+            </Link>
+          </ul>
+        </div>
       </div>
       <span className={footer.footer_container_bottom_border}></span>
 
